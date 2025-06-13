@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Perfil Linktree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Formulário de Criação/Edição -->
+    <form id="profileForm">
+      <input type="file" id="avatarInput" accept="image/*">
+      <input type="text" id="nameInput" placeholder="Nome Completo" required>
+      <textarea id="descriptionInput" placeholder="Descrição breve" required></textarea>
+
+      <!-- Inputs de Redes Sociais -->
+      <input type="url" id="linkedinInput" placeholder="Link do LinkedIn">
+      <input type="url" id="instagramInput" placeholder="Link do Instagram">
+      <input type="url" id="twitterInput" placeholder="Link do Twitter">
+
+      <div id="linksInputContainer">
+        <input type="text" class="linkNameInput" placeholder="Nome do Link 1">
+        <input type="url" class="linkInput" placeholder="Link 1 (URL)" required>
+      </div>
+
+      <button type="button" id="addLinkButton" title="Adicionar outro link">
+        <img src="plus.png" alt="Adicionar Link" style="width:24px;height:24px;">
+      </button>
+
+      <button type="submit">Salvar Perfil</button>
+    </form>
+
+    <!-- Visualização do Perfil -->
+    <div id="profileDisplay" style="display:none;">
+      <img id="avatar" src="" alt="Avatar">
+      <h1 id="name"></h1>
+      <p id="description"></p>
+      <div class="links" id="links"></div>
+ <div class="action-buttons">
+   
+        <button id="editProfile">Editar Perfil</button>
+        <button id="deleteProfile"> Excluir Perfil</button>
+         <button id="addNewLink" title="Adicionar novo link">
+  <img src="plus.png" alt="Adicionar Link" width="24" height="24">
+</button>
+      </div>
+      <!-- Redes Sociais -->
+      <div class="social-links" id="social-links">
+        <a href="#" id="linkedin"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#" id="instagram"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#" id="twitter"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+
+      <!-- Ações -->
+     
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
